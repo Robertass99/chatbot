@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RickBot — Assistente Interdimensional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="title">
+        <span class="gear">⚙️</span>
+        <h1>RickBot — Assistente Interdimensional</h1>
+        <p class="subtitle">Interface de IA Experimental — Use por sua conta e risco.</p>
+      </div>
+      <div class="status">Fluxo Temporal: <span class="stable">Estável</span></div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar">
+        <div class="avatar-frame">
+          <!-- Avatar do Rick Sanchez -->
+          <img id="rick-avatar" src="rick-avatar.jpg" alt="Rick Avatar">
+        </div>
+        <div class="personality-card">
+          <h2>Rick Sanchez</h2>
+          <p class="online">online</p>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <div id="chat-window" class="chat-window">
+          <!-- mensagens serão inseridas dinamicamente aqui -->
+        </div>
+
+        <div id="typing-indicator" class="typing-indicator hidden">
+          <div class="typing-avatar"></div>
+          <div class="dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="typing-text">Rick está digitando...</div>
+        </div>
+
+        <div class="input-row">
+          <textarea id="user-input" placeholder="Digite sua pergunta..." rows="1"></textarea>
+          <button id="send-btn" title="Enviar" aria-label="Enviar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="#6b00ff"/></svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Chatbot inspirado em personagens de ficção — não afiliado aos criadores.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
